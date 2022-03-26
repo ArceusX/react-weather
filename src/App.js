@@ -7,7 +7,7 @@ import Forecast from './components/Forecast';
 import { Loader } from 'semantic-ui-react';
 
 const URL = `https://api.openweathermap.org/data/2.5/onecall`
-const API_KEY = `09f9e9e4ba66366ed8a324f240a02852`
+const API_KEY = `4eaacc7320fab6ca8350c400f103acd0`
 
 function App() {
   const [latitude, setLatitude] = useState(null);
