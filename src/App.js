@@ -26,7 +26,7 @@ function App() {
       setLongitude(position.coords.longitude);
     });
 
-    axios.get(`${URL}?lat=${latitude}&lon=${longitude}&exclude=hourly,minutely&appid=${API_KEY}&units=metric`)
+    axios.get(`${URL}?lat=${latitude}&lon=${longitude}&exclude=current,hourly,minutely&appid=${API_KEY}&units=metric`)
       .then((weatherData) => {
         setloading(false)
         setTemprature(weatherData.data.current.temp);
